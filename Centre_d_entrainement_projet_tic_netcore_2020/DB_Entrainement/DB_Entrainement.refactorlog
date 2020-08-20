@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="b7cb55ff-7dc8-41d3-a38d-1b064ef446c0" ChangeDateTime="08/20/2020 12:32:04">
+    <Property Name="ElementName" Value="[dbo].[Proprietaire].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Proprietaire]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Proprietaire" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1d985ba8-497b-48a5-860a-281b4b66af64" ChangeDateTime="08/20/2020 12:35:31">
+    <Property Name="ElementName" Value="[dbo].[Cheval].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Cheval]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Cheval" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="babca0f6-bee8-4ada-bd8c-59788a40a8e7" ChangeDateTime="08/20/2020 12:43:41">
+    <Property Name="ElementName" Value="[dbo].[Soins].[Marechal]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Soins]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Marechal_derniere_visite" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="108a28e6-7a0a-4fb9-ab12-4f101b360152" ChangeDateTime="08/20/2020 12:44:46">
+    <Property Name="ElementName" Value="[dbo].[Employé].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Employé]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Employé" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c5f0351-b02e-490c-8f81-1b349e8d9d88" ChangeDateTime="08/20/2020 12:46:11">
+    <Property Name="ElementName" Value="[dbo].[Employé].[Statuts]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Employé]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Statuts_Employé" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7f37375f-5312-4d7b-aedf-e75e6b881e24" ChangeDateTime="08/20/2020 12:49:33">
+    <Property Name="ElementName" Value="[dbo].[Vaccination].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Vaccination]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_vaccination" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="471eba9c-d668-44d6-8be9-7cb0e5c51275" ChangeDateTime="08/20/2020 12:51:04">
+    <Property Name="ElementName" Value="[dbo].[Fracture].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Fracture]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Type_fracture" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="25fbb992-0a2f-4c72-b2ac-9a710803312b" ChangeDateTime="08/20/2020 12:52:27">
+    <Property Name="ElementName" Value="[dbo].[Tendinite].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Tendinite]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Type_tendinite" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="83f4adb5-bc6c-4397-bdd2-01a4cd826f82" ChangeDateTime="08/20/2020 12:57:01">
+    <Property Name="ElementName" Value="[dbo].[Entrainement].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Entrainement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Entainement" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c433c4b-40bc-4353-a633-731267387f37" ChangeDateTime="08/20/2020 12:59:08">
+    <Property Name="ElementName" Value="[dbo].[Entrainement].[Platy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Entrainement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Plat" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="983a626c-1625-4cdc-b227-987582ca103e" ChangeDateTime="08/20/2020 13:15:38">
+    <Property Name="ElementName" Value="[dbo].[Soins].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Soins]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Soins" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="561df175-5daa-4ee2-814c-2a4861adb0bd" ChangeDateTime="08/20/2020 13:18:39">
+    <Property Name="ElementName" Value="[dbo].[Course].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Course]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Hippodrome" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2d45c778-9f70-40f2-b24f-34b423ccc268" ChangeDateTime="08/20/2020 13:35:36">
+    <Property Name="ElementName" Value="[dbo].[mym_Cheval_Entrainement].[ChevalId_Cheval]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[mym_Cheval_Entrainement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MYM_ChevalId_Cheval" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="93bcf508-652a-44d3-857a-500dd0a2f41f" ChangeDateTime="08/20/2020 13:35:43">
+    <Property Name="ElementName" Value="[dbo].[mym_Cheval_Entrainement].[VaccinationId_Vaccination]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[mym_Cheval_Entrainement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MYM_VaccinationId_Vaccination" />
+  </Operation>
+</Operations>
