@@ -98,4 +98,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MYM_VaccinationId_Vaccination" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="164bb4bd-ece6-414e-ab54-6a792d000100" ChangeDateTime="08/20/2020 13:37:36">
+    <Property Name="ElementName" Value="[dbo].[mym_Cheval_Entrainement].[MYM_VaccinationId_Vaccination]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[mym_Cheval_Entrainement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MYM_ChevaliId_Cheval" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0e453f67-3d0b-470c-9fbd-581699f636d1" ChangeDateTime="08/20/2020 14:08:52">
+    <Property Name="ElementName" Value="[dbo].[Employé].[Soins_Soins]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Employé]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Soinsid_Soins" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4054daf4-51ee-44cf-8d31-a5a733daa1c2" ChangeDateTime="08/20/2020 14:15:38">
+    <Property Name="ElementName" Value="[dbo].[FK_Employé_ToMym]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Employé]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Employé_ToMymEmployé_Entrainement]" />
+  </Operation>
 </Operations>
