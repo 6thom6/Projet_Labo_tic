@@ -119,4 +119,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_Employé_ToMymEmployé_Entrainement]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f64431cf-3be5-4a94-a111-349f1296a8ce" ChangeDateTime="08/20/2020 14:25:07">
+    <Property Name="ElementName" Value="[dbo].[Infiltration].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Infiltration]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_Infiltration" />
+  </Operation>
 </Operations>
