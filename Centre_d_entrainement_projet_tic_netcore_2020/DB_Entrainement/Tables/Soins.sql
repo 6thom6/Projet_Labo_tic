@@ -6,4 +6,5 @@
     [Alimentation] NVARCHAR(50) NOT NULL, 
     [Complement_Alimentation] NVARCHAR(50) NOT NULL, 
     [Note_Libre] NVARCHAR(MAX) NULL
+
 )
