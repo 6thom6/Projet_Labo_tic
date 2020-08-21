@@ -5,7 +5,7 @@
     [Plat] NVARCHAR(50) NULL, 
     [Obstacle] NVARCHAR(50) NULL, 
     [Marcheur] NVARCHAR(50) NULL, 
-    [Durée] NCHAR(10) NULL, 
+    [Durée] DATETIME NULL, 
     [Pré] NVARCHAR(50) NULL, 
 
 

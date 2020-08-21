@@ -2,7 +2,7 @@
 (
 	[Id_Courses] INT NOT NULL, 
     [Hippodrome] NVARCHAR(50) NOT NULL, 
-    [Date_Courses] DATETIME NOT NULL, 
+    [Date_Courses] DATE NOT NULL, 
     [Distance] INT NOT NULL, 
     [Corde] NVARCHAR(50) NOT NULL, 
     [Discipline] NVARCHAR(50) NOT NULL, 

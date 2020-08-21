@@ -58,7 +58,6 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="Tables\ManyToMany" />
-    <Folder Include="Tables\NewFolder1\" />
     <Folder Include="Procédures" />
   </ItemGroup>
   <ItemGroup>

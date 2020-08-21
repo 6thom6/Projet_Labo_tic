@@ -1,0 +1,5 @@
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
