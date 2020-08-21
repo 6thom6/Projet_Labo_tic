@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Centre_d_entrainement_projet_tic_netcore_2020", "Centre_d_entrainement_projet_tic_netcore_2020\Centre_d_entrainement_projet_tic_netcore_2020.csproj", "{50AC6A18-1970-4287-B2A6-2C74E0886E0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Centre_d_entrainement_projet_tic_netcore_2020", "Centre_d_entrainement_projet_tic_netcore_2020\Centre_d_entrainement_projet_tic_netcore_2020.csproj", "{50AC6A18-1970-4287-B2A6-2C74E0886E0C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB_Entrainement", "DB_Entrainement\DB_Entrainement.sqlproj", "{A2F94C73-464F-425D-B641-B917FB131E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{A2F94C73-464F-425D-B641-B917FB131E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2F94C73-464F-425D-B641-B917FB131E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2F94C73-464F-425D-B641-B917FB131E7E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
