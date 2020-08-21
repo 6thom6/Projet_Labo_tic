@@ -6,6 +6,7 @@
     [Obstacle] NVARCHAR(50) NULL, 
     [Marcheur] NVARCHAR(50) NULL, 
     [Durée] NCHAR(10) NULL, 
+    [Pré] NVARCHAR(50) NULL, 
 
 
 )

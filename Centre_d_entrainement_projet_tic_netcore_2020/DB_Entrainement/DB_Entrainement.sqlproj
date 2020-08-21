@@ -56,5 +56,29 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\ManyToMany" />
+    <Folder Include="Tables\NewFolder1\" />
+    <Folder Include="Procédures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Proprietaire.sql" />
+    <Build Include="Tables\Cheval.sql" />
+    <Build Include="Tables\Course.sql" />
+    <Build Include="Tables\Historique.sql" />
+    <Build Include="Tables\Soins.sql" />
+    <Build Include="Tables\Employé.sql" />
+    <Build Include="Tables\Vaccination.sql" />
+    <Build Include="Tables\Fracture.sql" />
+    <Build Include="Tables\Tendinite.sql" />
+    <Build Include="Tables\Infiltration.sql" />
+    <Build Include="Tables\Entrainement.sql" />
+    <Build Include="Tables\ManyToMany\mym_Cheval_Entrainement.sql" />
+    <Build Include="Tables\ManyToMany\mym_Vaccination_Cheval.sql" />
+    <Build Include="Tables\ManyToMany\mym_Employé_Entrainement.sql" />
+    <Build Include="Tables\ManyToMany\mym_Course_cheval.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DB_Entrainement.refactorlog" />
   </ItemGroup>
 </Project>
