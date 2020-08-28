@@ -15,6 +15,7 @@ namespace DAL.Models
         public string Discipline { get; set; }
         public string Terrain { get; set; }
         public string Avis { get; set; }
+        public float Poids_De_Course { get; set; }
         public DateTime Date_Course { get; set; }
 
     }

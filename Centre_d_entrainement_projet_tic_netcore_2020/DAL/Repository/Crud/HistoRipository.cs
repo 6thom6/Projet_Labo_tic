@@ -35,7 +35,7 @@ namespace DAL.Repository.Crud
                             Id_Historique = reader["Id_Historique"] == DBNull.Value ? 0 : (int)reader["Id_Historique"],
                             Id_Cheval = reader["Id_Cheval"] == DBNull.Value ? 0 : (int)reader["Id_Cheval"],
                             Débourrage = reader["Débourrage"] == DBNull.Value ? string.Empty : (string)reader["Débourrage"],
-                            Preé_Entrainement = reader["Preé_Entrainement"] == DBNull.Value ? string.Empty : (string)reader["Preé_Entrainement"],
+                            Preé_Entrainement = reader["Pré-entrainement"] == DBNull.Value ? string.Empty : (string)reader["Pré-entrainement"],
                             Entraineur_Precedent = reader["Entraineur_Precedent"] == DBNull.Value ? string.Empty : (string)reader["Entraineur_Precedent"],
                             Proprietaire_Precedent = reader["Proprietaire_Precedent"] == DBNull.Value ? string.Empty : (string)reader["Proprietaire_Precedent"],
 
@@ -52,6 +52,29 @@ namespace DAL.Repository.Crud
         }
         public void Create(Historique NouvelHistorique)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO Historique (Id_Historique,Id_Cheval,Débourrage," + //les champs de la table
+                                                 "Preé_Entrainement," +
+                                                 "Entraineur_Precedent,Proprietaire_Precedent)" +
+                                                 "VALUES (@id_hitorique, @id_cheval,@debourrage,"+ //les champs a rentrer
+                                                 "@pré_entrainement, @entraineur_précédent, " +
+                                                 "@proprietaire_precedent)");
+
+            command.Parameters.AddWithValue("id_hitorique", NouvelHistorique.Id_Historique);
+            command.Parameters.AddWithValue("id_cheval", NouvelHistorique.Id_Cheval);
+            command.Parameters.AddWithValue("debourrage", NouvelHistorique.Débourrage);
+            command.Parameters.AddWithValue("pré_entrainement", NouvelHistorique.Preé_Entrainement);
+            command.Parameters.AddWithValue("entraineur_précédent", NouvelHistorique.Entraineur_Precedent);
+            command.Parameters.AddWithValue("proprietaire_precedent", NouvelHistorique.Proprietaire_Precedent);
+          
+
+            command.ExecuteNonQuery();
+
+
+
+            _connection.Close();
+
 
         }
         public void Update(Historique HistoriqueAModifier)

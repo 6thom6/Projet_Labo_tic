@@ -10,6 +10,5 @@ namespace DAL.Models
         public string Type_Fracture { get; set; }
         public DateTime Fracture_Indisponibilité { get; set; }
         
-
     }
 }

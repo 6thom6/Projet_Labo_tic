@@ -49,6 +49,22 @@ namespace DAL.Repository.Crud
         }
         public void Create(Employé NouvelEmploye)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO Employé (Id_Employé,SoinsId_Cheval,Nom_Employé," + //les champs de la table
+                                               "Statut_Employé,Employé_Embauche," +
+                                               "VALUES (@id_employe, @soinsid_cheval, @nom_employe," + //les champs a rentrer
+                                               "@status_employe, @employe_embauche");
+
+            command.Parameters.AddWithValue("id_employe", NouvelEmploye.Id_Employé);
+            command.Parameters.AddWithValue("soinsid_cheval", NouvelEmploye.SoinsId_Cheval);
+            command.Parameters.AddWithValue("nom_employe", NouvelEmploye.Nom_Employé);
+            command.Parameters.AddWithValue("status_employe", NouvelEmploye.Statut_Employé);
+            command.Parameters.AddWithValue("employe_embauche", NouvelEmploye.Employé_Embauche);
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
 
         }
         public void Update(Employé EmployéAModifier)

@@ -36,7 +36,7 @@ namespace DAL.Repository.Crud
                             Nom_Proprietaire = reader["Nom_Proprietaire"] == DBNull.Value ? string.Empty : (string)reader["Nom_Proprietaire"],
                             Dernier_Resultats = reader["Dernier_Resultats"] == DBNull.Value ? string.Empty : (string)reader["Dernier_Resultats"],
                             Effectif = reader["Effectif"] == DBNull.Value ? 0 : (int)reader["Effectif"],
-                            Arrive_ecurie = reader["Arrive_ecurie"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Arrive_ecurie"],
+                            Date_Arrivée = reader["Date_Arrivée"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Date_Arrivée"],
 
                         }
                         );
@@ -45,15 +45,32 @@ namespace DAL.Repository.Crud
 
             return GetallProprietaire;
         }
-        public Entrainement Get(int idAChercher)
+        public Proprietaire Get(int idAChercher)
         {
-            return new Entrainement();
+            return new Proprietaire();
         }
-        public void Create(Entrainement NouvelEntrainement)
+        public void Create(Proprietaire NouveauProprietaire)
         {
+            _connection.Open();
 
+            SqlCommand command = new SqlCommand("INSERT INTO Proprietaire (Id_Proprietaire,Nom_Proprietaire,Effectif," + //les champs de la table
+                                              "Date_Arrivée,Dernier_Resultat)" +
+                                              "VALUES (@id_proprietaire, @nom,effectif," + //les champs a rentrer
+                                              "@date_arrivée, @dernier_resultat)");
+
+            command.Parameters.AddWithValue("id_proprietaire", NouveauProprietaire.Id_Proprietaire);
+            command.Parameters.AddWithValue("nom", NouveauProprietaire.Nom_Proprietaire);
+            command.Parameters.AddWithValue("effectif", NouveauProprietaire.Effectif);
+            command.Parameters.AddWithValue("date_arrivée", NouveauProprietaire.Date_Arrivée);
+            command.Parameters.AddWithValue("dernier_resultat", NouveauProprietaire.Dernier_Resultats);
+
+
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
         }
-        public void Update(Entrainement EntrainementAModifier)
+        public void Update(Proprietaire ProprietaireAModifier)
         {
 
         }

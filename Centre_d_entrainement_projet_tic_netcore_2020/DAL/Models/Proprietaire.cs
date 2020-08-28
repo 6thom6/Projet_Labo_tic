@@ -10,7 +10,7 @@ namespace DAL.Models
         public string Nom_Proprietaire { get; set; }
         public int Effectif { get; set; }
         public string Dernier_Resultats { get; set; }
-        public DateTime Arrive_ecurie { get; set; }
+        public DateTime Date_Arrivée { get; set; }
 
     }
 }

@@ -62,7 +62,32 @@ namespace DAL.Repository.Crud
 
         public void Create(Cheval NouveauCheval)
         {
-            throw new NotImplementedException();
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO CHEVAL (ID_Cheval,Pere_Cheval,Mere_Cheval," + //les champs de la table
+                                                 "Sortie_Provisoire,Raison_SortieProvisoire," +
+                                                 "ID_Proprietaire,ID_Soins,Poids,Race)" +
+                                                 "VALUES (@id_cheval, @pere_cheval, @mere_cheval," + //les champs a rentrer
+                                                 "@sortie_provisoire, @raison_sortieprovisoire, " +
+                                                 "@id_proprietaire, @id_soins, @poids, @race )");
+
+            command.Parameters.AddWithValue("id_cheval", NouveauCheval.ID_Cheval);
+            command.Parameters.AddWithValue("pere_cheval", NouveauCheval.Pere_Cheval);
+            command.Parameters.AddWithValue("mere_cheval", NouveauCheval.Mere_Cheval);
+            command.Parameters.AddWithValue("sortie_provisoire", NouveauCheval.Sortie_Provisoire);
+            command.Parameters.AddWithValue("raison_sortieprovisoire", NouveauCheval.Raison_SortieProvisoire);
+            command.Parameters.AddWithValue("id_proprietaire", NouveauCheval.ID_Proprietaire);
+            command.Parameters.AddWithValue("id_soins", NouveauCheval.ID_Soins);
+            command.Parameters.AddWithValue("poids", NouveauCheval.Poids);
+            command.Parameters.AddWithValue("race", NouveauCheval.Race);
+
+
+            command.ExecuteNonQuery();
+
+
+
+            _connection.Close();
+
         }
 
 

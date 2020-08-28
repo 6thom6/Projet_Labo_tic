@@ -55,6 +55,28 @@ namespace DAL.Repository.Crud
         }
         public void Create(Soins NouveauSoins)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO Soins (Id_Soins,Id_Cheval,Id_Employe," + //les champs de la table
+                                              "Alimentation,Complement_Alimentation," +
+                                              "Note_Libre,Marechal,Vermifuge)" +
+                                              "VALUES (@id_soins, @id_cheval,@id_employe," + //les champs a rentrer
+                                              "@alimentation, @complement_alimentation, " +
+                                              "@note_libre, @marechal, @vermifuge )");
+
+            command.Parameters.AddWithValue("id_soins", NouveauSoins.Id_Soins);
+            command.Parameters.AddWithValue("id_cheval", NouveauSoins.Id_Cheval);
+            command.Parameters.AddWithValue("id_employe", NouveauSoins.Id_Employe);
+            command.Parameters.AddWithValue("alimentation", NouveauSoins.Alimentation);
+            command.Parameters.AddWithValue("complement_alimentation", NouveauSoins.Complement_Alimentation);
+            command.Parameters.AddWithValue("note_libre", NouveauSoins.Note_Libre);
+            command.Parameters.AddWithValue("marechal", NouveauSoins.Marechal);
+            command.Parameters.AddWithValue("vermifuge", NouveauSoins.Vermifuge);
+
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
 
         }
         public void Update(Soins SoinsAModifier)

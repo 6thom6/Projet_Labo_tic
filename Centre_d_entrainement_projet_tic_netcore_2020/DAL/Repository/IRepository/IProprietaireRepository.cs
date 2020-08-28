@@ -5,10 +5,10 @@ namespace DAL.Repository.Crud
 {
     interface IProprietaireRepository
     {
-        void Create(Entrainement NouvelEntrainement);
+        void Create(Proprietaire NouveauProprietaire);
         void Delete(int idADelete);
-        Entrainement Get(int idAChercher);
+        Proprietaire Get(int idAChercher);
         List<Proprietaire> GetallProprietaire();
-        void Update(Entrainement EntrainementAModifier);
+        void Update(Proprietaire EntrainementAModifier);
     }
 }

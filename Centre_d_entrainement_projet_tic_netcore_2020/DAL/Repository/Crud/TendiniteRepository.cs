@@ -47,7 +47,25 @@ namespace DAL.Repository.Crud
         }
         public void Create(Tendinite NouvelleTendinite)
         {
+            _connection.Open();
 
+            SqlCommand command = new SqlCommand("INSERT INTO Tendinite (Type_tendinite,tendinite_Indisponibilité,Id_Tendinite," //les champs de la table
+                                                 +
+                                                 "VALUES (@type_tendinite, @tendinite_indisponibilite, @id_tendinite)");
+
+
+
+            command.Parameters.AddWithValue("id_tendinite",NouvelleTendinite.Id_Tendinite);
+            command.Parameters.AddWithValue("type_tendinite", NouvelleTendinite.Type_Tendinite);
+            command.Parameters.AddWithValue("tendinite_indisponibilite",NouvelleTendinite.Tendinite_Indisponibilité);
+
+
+
+            command.ExecuteNonQuery();
+
+
+
+            _connection.Close();
         }
         public void Update(Tendinite TendiniteAModifier)
         {

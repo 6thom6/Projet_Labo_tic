@@ -23,7 +23,7 @@ namespace DAL.Repository.Crud
             {
                 _connection.Open();
 
-                SqlCommand command = new SqlCommand("SELECT * FROM Employé", _connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM Fracture", _connection);
 
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -47,6 +47,23 @@ namespace DAL.Repository.Crud
         }
         public void Create(Fracture NouvelleFracture)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO Fracture (Id_Fracture,Type_Fracture,Fracture_Indisponibilité," + //les champs de la table
+
+                                              "VALUES (@id_fracture, @type_fracture,@fracture_indisponibilité,)"); //les champs a rentrer
+                                    
+
+            command.Parameters.AddWithValue("id_soins", NouvelleFracture.Id_Fracture);
+            command.Parameters.AddWithValue("type_fracture", NouvelleFracture.Type_Fracture);
+            command.Parameters.AddWithValue("fracture_indisponibilité", NouvelleFracture.Fracture_Indisponibilité);
+
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
+
+
 
         }
         public void Update(Fracture FractureModifier)

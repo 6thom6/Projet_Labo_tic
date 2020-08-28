@@ -33,7 +33,7 @@ namespace DAL.Repository.Crud
                         {
                             Id_Vaccination = reader["Id_Vaccination"] == DBNull.Value ? 0 : (int)reader["Id_Vaccination"],
                             Nom_Vaccin = reader["Nom_Vaccin"] == DBNull.Value ? string.Empty : (string)reader["Nom_Vaccin"],
-                            Indisponibilite_Vaccin = reader["Indisponibilite_Vaccin"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Indisponibilite_Vaccin"]
+                            Delai_Indisponibilité = reader["Indisponibilite_Vaccin"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Indisponibilite_Vaccin"]
 
                         }
                         );
@@ -48,6 +48,26 @@ namespace DAL.Repository.Crud
         }
         public void Create(Vaccination Nouvellevaccination)
         {
+
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO Vaccination (Id_vaccination,Nom_vaccin,Delai_Indisponibilité" //les champs de la table
+                                                 +
+                                                 "VALUES (@id_vaccination, @nom_vaccin, @delai_indisponibilite)");
+
+
+
+            command.Parameters.AddWithValue("id_vaccination", Nouvellevaccination.Id_Vaccination);
+            command.Parameters.AddWithValue("nom_vaccin", Nouvellevaccination.Nom_Vaccin);
+            command.Parameters.AddWithValue("delai_indisponibilite", Nouvellevaccination.Delai_Indisponibilité);
+
+
+
+            command.ExecuteNonQuery();
+
+
+
+            _connection.Close();
 
         }
         public void Update(Vaccination VaccinationAModifier)

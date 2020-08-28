@@ -53,6 +53,26 @@ namespace DAL.Repository.Crud
         }
         public void Create(Entrainement NouvelEntrainement)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO CHEVAL (Id_Entainement,Cheval,Plat," + //les champs de la table
+                                                 "Obstacle,Marcheur," +
+                                                 "Pré,Durée)" +
+                                                 "VALUES (@id_entrainement, @cheval, @plat," + //les champs a rentrer
+                                                 "@obstacle, @marcheur, " +
+                                                 "@pré, @durée)");
+
+            command.Parameters.AddWithValue("id_entrainement", NouvelEntrainement.Id_Entainement);
+            command.Parameters.AddWithValue("cheval", NouvelEntrainement.Cheval);
+            command.Parameters.AddWithValue("plat", NouvelEntrainement.Plat);
+            command.Parameters.AddWithValue("obstacle", NouvelEntrainement.Obstacle);
+            command.Parameters.AddWithValue("marcheur", NouvelEntrainement.Marcheur);
+            command.Parameters.AddWithValue("pré", NouvelEntrainement.Pré);
+            command.Parameters.AddWithValue("durée", NouvelEntrainement.Durée);
+   
+            command.ExecuteNonQuery();
+
+            _connection.Close();
 
         }
         public void Update(Entrainement EntrainementAModifier)

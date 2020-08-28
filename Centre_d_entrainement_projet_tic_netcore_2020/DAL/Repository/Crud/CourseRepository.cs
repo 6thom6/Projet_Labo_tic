@@ -37,6 +37,7 @@ namespace DAL.Repository.Crud
                             Corde = reader["Corde"] == DBNull.Value ? string.Empty : (string)reader["Corde"],
                             Discipline = reader["Discipline"] == DBNull.Value ? string.Empty : (string)reader["Discipline"],
                             Terrain = reader["Terrain"] == DBNull.Value ? string.Empty : (string)reader["Terrain"],
+                            Poids_De_Course = reader["Poids_De_Course"] == DBNull.Value ? 0 : (float)reader["Poids_De_Course"],
                             Avis = reader["Avis"] == DBNull.Value ? string.Empty : (string)reader["Avis"],
                             Date_Course = reader["Date_Course"] == DBNull.Value ? DateTime.Now:(DateTime)reader["Date_Course"],
 
@@ -51,11 +52,36 @@ namespace DAL.Repository.Crud
         {
             return new Course();
         }
-        public void Create(Course NouveauCheval)
+        public void Create(Course NouvelleCourse)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO CHEVAL (ID_Course,Hippodrome,Jockey," + //les champs de la table
+                                                 "Corde,Discipline," +
+                                                 "Terrain,Avis,Poids,Date_Course,Poids_De_Course)" +
+                                                 "VALUES (@id_course, @hippodrome, @jockey," + //les champs a rentrer
+                                                 "@corde, @discipline, " +
+                                                 "@terrain, @avis, @date_course,@poids_de_course)");
+
+            command.Parameters.AddWithValue("id_course",NouvelleCourse.ID_Course);
+            command.Parameters.AddWithValue("hippodrome", NouvelleCourse.Hippodrome);
+            command.Parameters.AddWithValue("Jockey", NouvelleCourse.Jockey);
+            command.Parameters.AddWithValue("corde", NouvelleCourse.Corde);
+            command.Parameters.AddWithValue("discipline", NouvelleCourse.Discipline);
+            command.Parameters.AddWithValue("terrain", NouvelleCourse.Terrain);
+            command.Parameters.AddWithValue("avis", NouvelleCourse.Avis);
+            command.Parameters.AddWithValue("date_course", NouvelleCourse.Date_Course);
+            command.Parameters.AddWithValue("poids_de_course", NouvelleCourse.Poids_De_Course);
+   
+
+            command.ExecuteNonQuery();
+
+
+
+            _connection.Close();
 
         }
-        public void Update(Course ChevalAModifier)
+        public void Update(Course CourseAModifier)
         {
 
         }

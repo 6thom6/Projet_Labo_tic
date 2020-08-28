@@ -47,6 +47,25 @@ namespace DAL.Repository.Crud
         }
         public void Create(Infiltration NouvelleInfiltration)
         {
+            _connection.Open();
+
+            SqlCommand command = new SqlCommand("INSERT INTO Infiltration (Id_Infiltration,Infiltration_Type,Delai_infiltration_indisponibilité," //les champs de la table
+                                                 +
+                                                 "VALUES (@id_infiltration, @infiltration_type, @délai_indisponibilité)");
+
+
+
+            command.Parameters.AddWithValue("id_infiltration",NouvelleInfiltration.Id_Infiltration);
+            command.Parameters.AddWithValue("infiltration_type", NouvelleInfiltration.Type_Infiltration);
+            command.Parameters.AddWithValue("délai_indisponibilité",NouvelleInfiltration.Delai_Indisponibile);
+
+
+
+            command.ExecuteNonQuery();
+
+
+
+            _connection.Close();
 
         }
         public void Update(Infiltration InfiltrationModifier)

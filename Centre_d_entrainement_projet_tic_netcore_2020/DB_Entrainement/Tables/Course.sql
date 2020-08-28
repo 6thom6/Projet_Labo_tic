@@ -9,6 +9,7 @@
     [Terrain] NVARCHAR(50) NOT NULL, 
     [Avis] NVARCHAR(MAX) NULL, 
     [Jockey] NVARCHAR(50) NOT NULL, 
+    [Poids_De_Course] FLOAT NOT NULL, 
     CONSTRAINT [PK_Course] PRIMARY KEY ([Id_Courses]), 
 
   
