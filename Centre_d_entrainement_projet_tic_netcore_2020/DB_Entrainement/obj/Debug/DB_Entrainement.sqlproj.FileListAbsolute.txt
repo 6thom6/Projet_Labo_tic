@@ -4,3 +4,7 @@ C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic
 C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\DB_Entrainement.sqlprojAssemblyReference.cache
 C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\DB_Entrainement.dll
 C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\DB_Entrainement.pdb
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\Model.xml
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\refactor.xml
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\postdeploy.sql
+C:\Users\tboec\Documents\GitHub\Projet_Labo_tic\Centre_d_entrainement_projet_tic_netcore_2020\DB_Entrainement\obj\Debug\predeploy.sql
