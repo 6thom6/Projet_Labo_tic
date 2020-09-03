@@ -59,6 +59,7 @@
     <Folder Include="Tables" />
     <Folder Include="Tables\ManyToMany" />
     <Folder Include="Procédures" />
+    <Folder Include="scriptPostDeploiement" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Proprietaire.sql" />
@@ -79,5 +80,8 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DB_Entrainement.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="scriptPostDeploiement\insert_Chevaux.sql" />
   </ItemGroup>
 </Project>

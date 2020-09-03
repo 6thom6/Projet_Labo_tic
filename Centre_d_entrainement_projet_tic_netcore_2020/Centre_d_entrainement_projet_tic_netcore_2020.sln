@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Centre_d_entrainement_proje
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB_Entrainement", "DB_Entrainement\DB_Entrainement.sqlproj", "{A2F94C73-464F-425D-B641-B917FB131E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{37551DC8-6B7E-45B7-AECD-D1398EDDBEC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

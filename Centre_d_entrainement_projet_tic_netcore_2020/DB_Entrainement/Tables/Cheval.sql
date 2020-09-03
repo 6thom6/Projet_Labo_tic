@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Cheval]
 (
-	[Id_Cheval] INT NOT NULL PRIMARY KEY, 
+	[Id_Cheval] INT NOT NULL PRIMARY KEY,
+    [Nom_cheval]NVARCHAR(50) NOT NULL,
     [Pere_cheval] NVARCHAR(50) NOT NULL, 
     [Mere_cheval] NVARCHAR(50) NOT NULL, 
     [Sortie_provisoire] NVARCHAR(50) NULL, 
