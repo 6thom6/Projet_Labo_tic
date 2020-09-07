@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj": {}
+    "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj": {
+    "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj",
+        "projectUniqueName": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj",
         "projectName": "Centre_d_entrainement_projet_tic_netcore_2020",
-        "projectPath": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj",
-        "packagesPath": "C:\\Users\\tboec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\obj\\",
+        "projectPath": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020.csproj",
+        "packagesPath": "C:\\Users\\thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\Centre_d_entrainement_projet_tic_netcore_2020\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tboec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj"
+              "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj"
               }
             }
           }
@@ -64,20 +65,21 @@
         }
       }
     },
-    "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj": {
+    "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\tboec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tboec\\Documents\\GitHub\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thomas\\Source\\Repos\\6thom6\\Projet_Labo_tic\\Centre_d_entrainement_projet_tic_netcore_2020\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tboec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

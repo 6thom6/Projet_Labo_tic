@@ -1,0 +1,45 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Créer
+       [dbo].[Cheval] (Table)
+       [dbo].[Course] (Table)
+       [dbo].[Employé] (Table)
+       [dbo].[Entrainement] (Table)
+       [dbo].[Fracture] (Table)
+       [dbo].[Historique] (Table)
+       [dbo].[Infiltration] (Table)
+       [dbo].[mym_Cheval_Entrainement] (Table)
+       [dbo].[mym_Course_cheval] (Table)
+       [dbo].[mym_Employé_Entrainement] (Table)
+       [dbo].[mym_Vaccination_Cheval] (Table)
+       [dbo].[Proprietaire] (Table)
+       [dbo].[Soins] (Table)
+       [dbo].[Tendinite] (Table)
+       [dbo].[Vaccination] (Table)
+       [dbo].[FK_Cheval_Proprietaire] (Clé étrangère)
+       [dbo].[FK_Cheval_Soins] (Clé étrangère)
+       [dbo].[FK_Fracture_ToSoins] (Clé étrangère)
+       [dbo].[FK_Historique_ToCheval] (Clé étrangère)
+       [dbo].[FK_Infiltration_ToSoins] (Clé étrangère)
+       [dbo].[FK_mym_Cheval_Entrainement_ToEntrainement] (Clé étrangère)
+       [dbo].[FK_mym_Cheval_Entrainement_ToCheval] (Clé étrangère)
+       [dbo].[FK_mym_Course_cheval_ToCourses] (Clé étrangère)
+       [dbo].[FK_mym_Course_cheval_ToCheval] (Clé étrangère)
+       [dbo].[FK_mym_Employé_Entrainement_ToEntrainement] (Clé étrangère)
+       [dbo].[FK_mym_Employé_Entrainement_ToEmployé] (Clé étrangère)
+       [dbo].[FK_mym_Vaccination_Cheval_ToVaccination] (Clé étrangère)
+       [dbo].[FK_mym_Vaccination_Cheval_ToCheval] (Clé étrangère)
+       [dbo].[FK_Soins_ToCheval] (Clé étrangère)
+       [dbo].[FK_Soins_ToEmploye] (Clé étrangère)
+       [dbo].[FK_Tendinite_ToSoins] (Clé étrangère)
+
+** Actions de support

@@ -1,0 +1,19 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Supprimer
+       [dbo].[FK_Tendinite_ToSoins] (Clé étrangère)
+     Créer
+       [dbo].[FK_Soins_ToFracture] (Clé étrangère)
+       [dbo].[FK_Soins_ToInfiltration] (Clé étrangère)
+       [dbo].[FK_Soins_ToTendinite] (Clé étrangère)
+
+** Actions de support

@@ -1,0 +1,19 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Modifier
+       [dbo].[Cheval] (Table)
+
+** Actions de support
+     Supprimer
+       [dbo].[FK_Cheval_Soins] (Clé étrangère)
+     Créer
+       [dbo].[FK_Cheval_Soins] (Clé étrangère)

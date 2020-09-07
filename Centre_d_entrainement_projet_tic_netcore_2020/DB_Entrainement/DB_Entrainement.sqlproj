@@ -69,9 +69,6 @@
     <Build Include="Tables\Soins.sql" />
     <Build Include="Tables\Employé.sql" />
     <Build Include="Tables\Vaccination.sql" />
-    <Build Include="Tables\Fracture.sql" />
-    <Build Include="Tables\Tendinite.sql" />
-    <Build Include="Tables\Infiltration.sql" />
     <Build Include="Tables\Entrainement.sql" />
     <Build Include="Tables\ManyToMany\mym_Cheval_Entrainement.sql" />
     <Build Include="Tables\ManyToMany\mym_Vaccination_Cheval.sql" />

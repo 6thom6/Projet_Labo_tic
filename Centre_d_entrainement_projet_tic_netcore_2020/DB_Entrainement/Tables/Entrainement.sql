@@ -5,7 +5,7 @@
     [Plat] NVARCHAR(50) NULL, 
     [Obstacle] NVARCHAR(50) NULL, 
     [Marcheur] NVARCHAR(50) NULL, 
-    [Durée] nvarchar NULL, 
+    [Durée] nvarchar(50) NULL, 
     [Pré] NVARCHAR(50) NULL, 
 
 

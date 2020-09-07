@@ -41,6 +41,10 @@ namespace DAL.Repository.Crud
                             Note_Libre = reader["Note_Libre"] == DBNull.Value ? string.Empty : (string)reader["Note_Libre"],
                             Marechal = reader["Marechal"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Marechal"],
                             Vermifuge = reader["Vermifuge"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Vermifuge"],
+                            type_de_soin = reader["Type_de_soin"] == DBNull.Value ? string.Empty : (string)reader["Type_de_soin"],
+                            durrée_indisponibilité = reader["durrée_indisponibilité"] == DBNull.Value ? string.Empty : (string)reader["durrée_indisponibilité"],
+                            date_de_soin = reader ["date_de_soin"] == DBNull.Value ? string.Empty : (string)reader["date_de_soin"]
+                            
 
                         }
                         );
@@ -75,6 +79,9 @@ namespace DAL.Repository.Crud
                         Note_Libre = reader["Note_Libre"] == DBNull.Value ? string.Empty : (string)reader["Note_Libre"],
                         Marechal = reader["Marechal"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Marechal"],
                         Vermifuge = reader["Vermifuge"] == DBNull.Value ? DateTime.Now : (DateTime)reader["Vermifuge"],
+                        type_de_soin = reader["Type_de_soin"] == DBNull.Value ? string.Empty : (string)reader["Type_de_soin"],
+                        durrée_indisponibilité = reader["durrée_indisponibilité"] == DBNull.Value ? string.Empty : (string)reader["durrée_indisponibilité"],
+                        date_de_soin = reader["date_de_soin"] == DBNull.Value ? string.Empty : (string)reader["date_de_soin"]
 
                     };
                         
@@ -95,7 +102,7 @@ namespace DAL.Repository.Crud
                                                   "VALUES (@id_soins, @id_cheval,@id_employe," + //les champs a rentrer
                                                   "@alimentation, @complement_alimentation, " +
                                                   "@note_libre, @marechal, @vermifuge )");
-
+                //pas Encore Modifié avec les champs fracture/infiltration etc
                 command.Parameters.AddWithValue("id_soins", NouveauSoins.Id_Soins);
                 command.Parameters.AddWithValue("id_cheval", NouveauSoins.Id_Cheval);
                 command.Parameters.AddWithValue("id_employe", NouveauSoins.Id_Employe);
@@ -104,6 +111,9 @@ namespace DAL.Repository.Crud
                 command.Parameters.AddWithValue("note_libre", NouveauSoins.Note_Libre);
                 command.Parameters.AddWithValue("marechal", NouveauSoins.Marechal);
                 command.Parameters.AddWithValue("vermifuge", NouveauSoins.Vermifuge);
+                command.Parameters.AddWithValue("Type_de_soin", NouveauSoins.Type_de_soin);
+                command.Parameters.AddWithValue("durrée_indisponibilité", NouveauSoins.durrée_indisponibilité);
+                command.Parameters.AddWithValue("date_de_soin", NouveauSoins.date_de_soin);
 
 
                 command.ExecuteNonQuery();
@@ -121,7 +131,7 @@ namespace DAL.Repository.Crud
                     "Id_Employe = @id_employe, Alimentation =@alimentation,Complement_Alimentation = @ complement_alimentation, " +
                     "Note_Libre = @note_libre, Marechal = @marechal, Vermifuge=@vermifuge" +
                     "WHERE Id_Soins = @id_soins ");
-
+                //pas Encore Modifié avec les champs fracture/infiltration etc
                 command.Parameters.AddWithValue("id_soins", SoinsAModifier.Id_Soins);
                 command.Parameters.AddWithValue("id_cheval", SoinsAModifier.Id_Cheval);
                 command.Parameters.AddWithValue("id_employe", SoinsAModifier.Id_Employe);
@@ -130,7 +140,9 @@ namespace DAL.Repository.Crud
                 command.Parameters.AddWithValue("note_libre", SoinsAModifier.Note_Libre);
                 command.Parameters.AddWithValue("marechal", SoinsAModifier.Marechal);
                 command.Parameters.AddWithValue("vermifuge", SoinsAModifier.Vermifuge);
-
+                command.Parameters.AddWithValue("Type_de_soin", NouveauSoins.Type_de_soin);
+                command.Parameters.AddWithValue("durrée_indisponibilité", NouveauSoins.durrée_indisponibilité);
+                command.Parameters.AddWithValue("date_de_soin", NouveauSoins.date_de_soin);
 
                 command.ExecuteNonQuery();
 
